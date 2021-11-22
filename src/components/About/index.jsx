@@ -56,7 +56,7 @@ const About = ({ isDesktop, isMobile }) => {
 										target='_blank'
 										rel='noopener noreferrer'
 										className='cta-btn cta-btn--resume'
-										href='https://google.com/'
+										href='https://github.com/SyedAqibHussain/portfolio/raw/master/src/assets/CV.pdf'
 									>
 										Resume
 									</a>
