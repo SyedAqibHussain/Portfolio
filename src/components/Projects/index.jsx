@@ -4,6 +4,7 @@ import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title';
 
+import wordleImg from '../../assets/images/wordle.jpg';
 import chairImg from '../../assets/images/chair.png';
 import datacyImg from '../../assets/images/datacy.png';
 import eriyadaImg from '../../assets/images/eriyada.png';
@@ -16,6 +17,79 @@ const Projects = ({ isDesktop, isMobile }) => {
 			<Container>
 				<div className='project-wrapper'>
 					<Title title='Projects' />
+					{/* Wordle */}
+					<Row>
+						<Col lg={4} sm={12}>
+							<Fade
+								left={isDesktop}
+								bottom={isMobile}
+								duration={1000}
+								delay={500}
+								distance='30px'
+							>
+								<div className='project-wrapper-text'>
+									<h3 className='project-wrapper-text-title'>Wordle Clone</h3>
+									<div>
+										<p>
+											Clone of the famous WORDLE game. Guess the word in six
+											tries. Each guess must be a valid five-letter word. Hit
+											the enter button to submit. After each guess, the color of
+											the tiles will change to show how close your guess was to
+											the word.
+										</p>
+									</div>
+									<a
+										target='_blank'
+										rel='noopener noreferrer'
+										className='cta-btn cta-btn--hero'
+										href='https://syedaqibhussain.github.io/wordle-clone/'
+									>
+										See Live
+									</a>
+								</div>
+							</Fade>
+						</Col>
+						<Col lg={8} sm={12}>
+							<Fade
+								right={isDesktop}
+								bottom={isMobile}
+								duration={1000}
+								delay={1000}
+								distance='30px'
+							>
+								<div className='project-wrapper-image'>
+									<a
+										href='https://syedaqibhussain.github.io/wordle-clone/'
+										target='_blank'
+										aria-label='Project Link'
+										rel='noopener noreferrer'
+									>
+										<Tilt
+											options={{
+												reverse: false,
+												max: 8,
+												perspective: 1000,
+												scale: 1,
+												speed: 300,
+												transition: true,
+												axis: null,
+												reset: true,
+												easing: 'cubic-bezier(.03,.98,.52,.99)',
+											}}
+										>
+											<div data-tilt className='thumbnail rounded'>
+												<img
+													src={wordleImg}
+													className='project-image'
+													alt='project'
+												/>
+											</div>
+										</Tilt>
+									</a>
+								</div>
+							</Fade>
+						</Col>
+					</Row>
 					{/* 3d chair */}
 					<Row>
 						<Col lg={4} sm={12}>
